@@ -1,0 +1,270 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color tokens for Taj Events luxury theme */
+  --background: #faf8f4;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --primary: #631028;
+  --primary-foreground: #faf8f4;
+  --secondary: #f5f1eb;
+  --secondary-foreground: #1a1a1a;
+  --muted: #e8e3d8;
+  --muted-foreground: #6b6b6b;
+  --accent: #b97e35;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #fafafa;
+  --border: #e8e3d8;
+  --input: #ffffff;
+  --ring: #631028;
+  --chart-1: #631028;
+  --chart-2: #b97e35;
+  --chart-3: #d4a574;
+  --chart-4: #8b5a3c;
+  --chart-5: #4a2618;
+  --radius: 0.5rem;
+  --sidebar: #faf8f4;
+  --sidebar-foreground: #1a1a1a;
+  --sidebar-primary: #631028;
+  --sidebar-primary-foreground: #faf8f4;
+  --sidebar-accent: #b97e35;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #e8e3d8;
+  --sidebar-ring: #631028;
+}
+
+.dark {
+  --background: #0f0e0c;
+  --foreground: #faf8f4;
+  --card: #1a1814;
+  --card-foreground: #faf8f4;
+  --popover: #1a1814;
+  --popover-foreground: #faf8f4;
+  --primary: #d4a574;
+  --primary-foreground: #0f0e0c;
+  --secondary: #2a2419;
+  --secondary-foreground: #faf8f4;
+  --muted: #3a3631;
+  --muted-foreground: #a8a8a8;
+  --accent: #e8b880;
+  --accent-foreground: #0f0e0c;
+  --destructive: #ef4444;
+  --destructive-foreground: #fafafa;
+  --border: #3a3631;
+  --input: #1a1814;
+  --ring: #d4a574;
+  --chart-1: #d4a574;
+  --chart-2: #e8b880;
+  --chart-3: #c89a6a;
+  --chart-4: #b87d54;
+  --chart-5: #a86a45;
+  --sidebar: #1a1814;
+  --sidebar-foreground: #faf8f4;
+  --sidebar-primary: #d4a574;
+  --sidebar-primary-foreground: #0f0e0c;
+  --sidebar-accent: #e8b880;
+  --sidebar-accent-foreground: #0f0e0c;
+  --sidebar-border: #3a3631;
+  --sidebar-ring: #d4a574;
+}
+
+@theme inline {
+  --font-sans: "Geist", "Geist Fallback";
+  --font-serif: "Cinzel", "Cinzel Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif font-semibold;
+  }
+}
+
+.hero-title {
+  @apply font-serif text-5xl md:text-7xl font-bold text-pretty leading-tight text-primary;
+}
+
+.section-title {
+  @apply font-serif text-4xl md:text-5xl font-semibold text-primary mb-4;
+}
+
+.accent-text {
+  @apply text-accent font-serif;
+}
+
+.luxury-card {
+  @apply bg-card rounded-lg overflow-hidden border border-border shadow-lg hover:shadow-xl transition-shadow;
+}
+
+/* Enhanced premium scroll animations for luxury feel */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(185, 126, 53, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(185, 126, 53, 0.6);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-animate {
+  animation: slideUp 0.8s ease-out forwards;
+  animation-fill-mode: both;
+}
+
+.animate-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+.animate-fade-scale {
+  animation: fadeInScale 0.8s ease-out forwards;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, var(--accent), rgba(185, 126, 53, 0.2), var(--accent));
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
