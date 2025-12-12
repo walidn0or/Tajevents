@@ -26,10 +26,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40 -z-10" />
 
       <div className="max-w-4xl mx-auto text-center z-10">
-        <div className="mb-8 inline-block">
-          <span className="text-accent font-serif text-xl">Perfect Planning</span>
-        </div>
-
+        
         <h1 className="hero-title mb-6">Creating Unforgettable Moments</h1>
 
         <p className="text-xl text-primary-foreground mb-4 max-w-2xl mx-auto font-light leading-relaxed">

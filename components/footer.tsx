@@ -138,13 +138,7 @@ export default function Footer() {
           <div>
             <h3 className="font-serif font-bold text-foreground mb-4">Contact</h3>
             <div className="space-y-2 text-muted-foreground">
-              <p>Hamilton, ON & Kabul, AFG</p>
-              <p>
-                <a href="tel:+13658894928" className="hover:text-primary transition-colors">
-                  +1 (365) 889-4928
-                </a>
-              </p>
-              <p>
+                            <p>
                 <a href="mailto:tajevents.ca@gmail.com" className="hover:text-primary transition-colors">
                   tajevents.ca@gmail.com
                 </a>
@@ -155,7 +149,7 @@ export default function Footer() {
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-            &copy; {currentYear} Taj Events. All rights reserved. Perfect Planning.
+            &copy; {currentYear} Taj Events. All rights reserved.
           </p>
           <div className="flex gap-4">
             <a

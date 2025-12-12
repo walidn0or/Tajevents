@@ -20,8 +20,9 @@ export default function About() {
 
           {/* Content */}
           <div className="scroll-animate">
-            <span className="text-accent font-serif text-lg font-bold">About Taj Events</span>
-            <h2 className="section-title mt-2">The Taj Signature</h2>
+            <h2 className="section-title">
+              About <span className="accent-text">Taj Events</span>
+            </h2>
 
             <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
               Founded in 2025, Taj Events is a premier event decoration company based in Hamilton, Ontario, with a branch in Kabul, Afghanistan.

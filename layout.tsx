@@ -50,9 +50,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#631028" />
-        <link rel="icon" href="/taj-logo.svg" type="image/svg+xml" />
-        <link rel="icon" href="/taj-logo-32x32.png" type="image/png" sizes="32x32" />
-        <link rel="apple-touch-icon" href="/taj-logo.svg" />
+        <link rel="icon" href="/abstract.svg" type="image/svg+xml" />
+        <link rel="icon" href="/abstract-32x32.png" type="image/png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/abstract.svg" />
       </head>
       <body className={`${geist.className} antialiased`}>{children}</body>
     </html>

@@ -31,8 +31,8 @@ export default function Gallery() {
     {
       category: "Henna Nights",
       items: [
-        { title: "Traditional Henna", image: "/gallary/traditional-henna-night-celebration-with-ornate-de.jpg" },
-        { title: "Festive Henna", image: "/gallary/vibrant-henna-night-party-setup-with-burgundy-and-.jpg" },
+        { title: "Traditional Henna", image: "/gallary/traditional-henna-night-celebration-with-ornate-de.jpeg" },
+        { title: "Festive Henna", image: "/gallary/traditional-henna-night-decoration.jpg" },
         { title: "Elegant Mehendi", image: "/gallary/luxury-mehendi-ceremony-with-floral-arrangements.jpg" },
       ],
     },
@@ -40,7 +40,7 @@ export default function Gallery() {
       category: "Bridal Showers",
       items: [
         { title: "Chic Bridal", image: "/gallary/sophisticated-bridal-shower-with-elegant-table-set.jpg" },
-        { title: "Luxury Gathering", image: "/gallary/premium-bridal-shower-event-with-gold-decor.jpg" },
+        { title: "Luxury Gathering", image: "/gallary/premium-bridal-shower-event-with-gold-decor.jpeg" },
         { title: "Modern Celebration", image: "/gallary/contemporary-bridal-shower-party-design.jpg" },
       ],
     },
@@ -112,7 +112,7 @@ export default function Gallery() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 scroll-animate">
             <h2 className="section-title">
-              Gallery <span className="accent-text">Showcase</span>
+              Gallery Showcase
             </h2>
             <p className="text-lg text-muted-foreground">Click any image to view in full detail</p>
           </div>

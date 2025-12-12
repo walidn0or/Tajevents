@@ -31,7 +31,7 @@ export default function Booking() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-            Reserve Your <span className="text-accent">Perfect Event</span>
+            Book your <span className="text-accent">free consultation</span>
           </h2>
           <p className="text-xl text-primary-foreground/80">
             Choose your preferred booking time and let us create magic for your celebration
@@ -57,7 +57,7 @@ export default function Booking() {
             <Phone className="text-accent flex-shrink-0 mt-1" size={24} />
             <div>
               <h3 className="font-serif font-bold mb-1">We'll Connect</h3>
-              <p className="text-primary-foreground/80">Our team will reach out to finalize</p>
+              <p className="text-primary-foreground/80">Our team will reach out to finalize within 24 hours</p>
             </div>
           </div>
         </div>
@@ -121,19 +121,25 @@ export default function Booking() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <input
-                type="date"
-                name="eventDate"
-                required
-                className="px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <input
-                type="time"
-                name="bookingTime"
-                required
-                className="px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                aria-label="Booking time"
-              />
+              <div>
+                <label className="block text-sm font-medium mb-2 text-foreground">Event Date</label>
+                <input
+                  type="date"
+                  name="eventDate"
+                  required
+                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-2 text-foreground">Preferred Time</label>
+                <input
+                  type="time"
+                  name="bookingTime"
+                  required
+                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                  aria-label="Booking time"
+                />
+              </div>
             </div>
 
             <textarea
@@ -148,7 +154,7 @@ export default function Booking() {
               disabled={state.submitting}
               className="w-full px-8 py-4 bg-primary text-primary-foreground rounded-lg font-serif font-bold text-lg hover:opacity-90 transition-opacity disabled:opacity-50"
             >
-              {state.submitting ? "Booking..." : "Reserve Your Date"}
+              {state.submitting ? "Booking..." : "send inquiry"}
             </button>
 
             {state.errors && (
@@ -195,9 +201,6 @@ export default function Booking() {
         <div className="text-center">
           <p className="text-primary-foreground/80 mb-4">Or reach out directly:</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="tel:+13658894928" className="text-accent font-serif font-bold hover:underline">
-              +1 (365) 889-4928
-            </a>
             <a href="https://wa.me/12897009451" className="text-accent font-serif font-bold hover:underline">
               WhatsApp: +1 (289) 700-9451
             </a>

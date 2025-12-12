@@ -41,7 +41,6 @@ Our team will review your request and contact you within 24 hours at:
 📧 ${email}
 
 If you have any urgent questions, feel free to reach out:
-- Phone: +1 (365) 889-4928
 - WhatsApp: +1 (289) 700-9451
 - Email: tajevents.ca@gmail.com
 
